@@ -1,0 +1,39 @@
+
+#include <stdio.h>
+int main() {
+    int input;
+    int x;
+
+    printf("당신이 원하는 게임을 추천해드려요\n");
+    printf("무엇을 하실 것인지 입력하세요 \n");
+    printf("1. 온라인 \n");
+    printf("2. 패키지 \n");
+    printf("3. 휴대폰게임 \n");
+
+    scanf_s("%d", &input);
+
+    switch (input) {
+    case 1:
+     printf("온라인 어떤 장르가 좋은가요? 1.RPG 2.FPS 3.AOS \n");
+     scanf_s("%d", &x);
+     if (x == 1)
+     {
+          printf("추천해드리는 게임은1.이것 2.저것 3.넣어^^ 입니다")    
+     }
+     else if(x ==2)
+     {
+      printf("추천해드리는 게임은 1.이것 2.저것 3.요거 입니다.");
+        }
+     else if(x == 3)
+     {
+      printf("추천드리는 게임은 1.이거 2.저거 3.저거 입니다.");
+         }
+     break;
+ case 2:
+     printf("패키지 는 너가만들어 위에 보면서")
+
+case 3;
+   printf("어떤 휴대폰게임을 원하시나요? 1.여기다 2.찾은거 3.넣어 \n");
+   scanf_s("%d", %n);
+   if (x == 1)
+    }
