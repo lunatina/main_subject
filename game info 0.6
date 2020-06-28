@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+
+int main() {
+	//랜덤함수로 추천하기
+		//시작하기 앞서 주석들은 코드의 설명을 돕기위한 것 제외하고 지우도록한다.
+	srand(time(NULL));
+	int input = 0;
+	int x = 0;
+	int y = 0;
+	//랜덤함수용 겜이름들
+	char ary_online[][100] = { "로아","검사","와우","배그","옵치","콜옵","롤","스타","도타2" };
+	char ary_package[][100] = { "","" };//알아서 추가
+	char ary_mobile[][100] = { "","" };//알아서 추가
+	int ranum, a, b = sizeof(ary_online) / sizeof(ary_online[1]) - 1;
+	
+
+	//랜덤함수 사용한거
+	while (true) {
+		printf("당신이 원하는 게임을 추천해드려요\n");
+		printf("무엇을 하실 것인지 입력하세요 \n");
+		printf("1. 온라인 \n");
+		printf("2. 패키지 \n");
+		printf("3. 휴대폰게임 \n");
+		printf("4. 종료\n");
+		printf("번호를 입력해 주세요 : ");
+		scanf_s("%d", &input);
+
+		if (input == 1) {//온라인겜 
+			//난수 발생
+			ranum = rand() % b;
+			//난수 발생한거랑 위에 적은 게임 들중에서 발생한 난수랑 맞는거 찾아서 알려줌
+			for (int i = sizeof(ary_online) / sizeof(ary_online[1]) - 1; i >= 0; i--) {
+				if (ranum == i) {
+					printf("%s\n\n", ary_online[i]);
+				}
+			}
+		}
+
+		else if (input == 2) {//패키지겜
+			//난수 발생
+			ranum = rand() % b;
+			//난수 발생한거랑 위에 적은 게임 들중에서 발생한 난수랑 맞는거 찾아서 알려줌
+			for (int i = sizeof(ary_package) / sizeof(ary_package[1]) - 1; i >= 0; i--) {
+				if (ranum == i) {
+					printf("%s\n\n", ary_package[i]);
+				}
+			}
+		}
+
+		else if (input == 3) {//모바일겜
+			//난수 발생
+			ranum = rand() % b;
+			//난수 발생한거랑 위에 적은 게임 들중에서 발생한 난수랑 맞는거 찾아서 알려줌
+			for (int i = sizeof(ary_mobile) / sizeof(ary_mobile[1]) - 1; i >= 0; i--) {
+				if (ranum == i) {
+					printf("%s\n\n", ary_mobile[i]);
+				}
+			}
+		}
+
+		else if (input == 4) {
+			//종료코드 묻는 질문에서 4번 누르면 얄짤없이 종료됨
+			printf("프로그램을 종료합니다\n\n");
+			break;//while이 true로 되어있어서 무한 루프로 게속 질문을 하고 scan을 함
+			//그것을 끊는 코드
+		}
+		else {
+			printf("숫자 1~4까지만 입력해 주시길 바랍니다.\n\n");
+			//문자치면 고장남 input의 자료형이 int이기 때문 char방식은 절대 안댐
+			//고장난거 해결법 모름 무한루프 에러가 걸리므로 절대로 문자 안치도록하기!
+			//해결가능하면 해결해서 쓰기
+
+		}
+
+	}
+
+	return 0;
+}
