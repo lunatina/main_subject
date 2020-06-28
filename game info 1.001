@@ -1,0 +1,224 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+
+int main() {
+
+	
+	char ary_indi[][100] = { "Journey(저니)","UNDERTALE(언더테일)","Sacred Stones","Aaero(에어로)","Anarcute(아나큐트)","Despotism 3k(횡포 삼크)","Standby(스텐바이)","My Memory of us(내가 가진우리의 기억)",
+		"Shikhondo 식혼도-soul eater","The Textorcist: The Story of Ray Bibbia(텍스트 퇴마사)","Steel Rats(쇠쥐들)","Human-powered spacecraft(인간동력 우주선)","Pan-Pan(팡팡)","Viking Squad(바이킹 스쿼드)",
+	"Colorzzle(컬러즐)","MarZ:Tactical Base Defense(전술기지방어)","GNOG","Blind Girl(블라인드 걸)","Semblance(셈블런스)","The Coma: Recut(코마: 리컷)","Floor kids(플로어 키즈)","The Inner Friend(내면의 친구)",
+		"Assault Spy(폭행 간첩)","Card Crawl(카드 크롤)" };
+	srand(time(NULL));
+	int input = 0;
+	int x = 0;
+	int y = 0;
+	int ranum, a, b = sizeof(ary_indi) / sizeof(ary_indi[1]);
+	
+	while (true) {
+		printf("당신이 원하는 게임을 추천해드려요\n");
+		printf("무엇을 하실 것인지 입력하세요 \n");
+		printf("1. 온라인 \n");
+		printf("2. 패키지 \n");
+		printf("3. 휴대폰게임 \n");
+		printf("4. 인디게임무작위추천\n");
+		printf("5. 종료\n");
+		printf("번호를 입력해 주세요 : ");
+		scanf_s("%d", &input);
+
+		if (input == 1) {
+			
+			printf("온라인 어떤 장르가 좋은가요? 1.RPG 2.FPS 3.AOS \n");
+			printf("번호를 입력해 주세요 : ");
+			scanf_s("%d", &x);
+			if (x == 1)
+			{
+				printf("추천해드리는 게임은1.로스트아크 2.검은사막 3.월드오브워크래프트.\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 스마일게이트 사의 MMORPG입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은 펄어비스 사의 MMORPG입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 블리자드 사의 MMORPG입니다.\n\n");
+				}
+
+			}
+			else if (x == 2)
+			{
+				
+				printf("추천해드리는 게임은 1.배틀그라운드 2.오버워치 3.발로란트.\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 PUPG주식회사의 배틀로열 게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은 블리자드사의 하이퍼FPS입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 라이엇사의 하이퍼FPS입니다.\n\n");
+				}
+			}
+			else if (x == 3)
+			{
+				
+				printf("추천드리는 게임은 1.리그오브레전드 2.스타크래프트 3.도타.\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 라이엇사의 MOBA 게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은 블리자드사의 AOS 게임입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 라이엇사의 MOBA게임입니다.\n\n");
+				}
+			}
+		}
+		else if (input == 2) {
+			
+			printf("패키지 어떤 장르가 좋은가요? 1.RPG 2.FPS 3.오픈월드 \n");
+			printf("번호를 입력해 주세요 : ");
+			scanf_s("%d", &x);
+			if (x == 1)
+			{
+			
+				printf("추천해드리는 게임은1.몬스터 헌터 월드 2.다크소울 3.디아블로 \n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 CAPCOM사의 RPG 게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은 FROM SOFTWARE의 3인칭 액션 RPG 게임입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 블리자드사의 액션 RPG게임입니다.\n\n");
+				}
+			}
+			else if (x == 2)
+			{
+				
+				printf("추천해드리는 게임은 1.크라이시스 2.콜오브듀티 3.메트로.\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 크라이텍사의 SF, FPS 게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은 intfinity ward 와 ACTIVISION 사의 FPS게임입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 4A 게임즈의 호러 FPS게임입니다.\n\n");
+				}
+			}
+			else if (x == 3)
+			{
+				
+				printf("추천드리는 게임은 1.메탈기어솔리드 2.데스스트렌딩 3.호라이즌 제로 던.\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 코지마 프로덕션의 전략 잠입 액션게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은 코지마 프로덕션의 시네마틱 어드벤처 게임입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 게릴라 게임즈의 3인칭 오픈 월드 액션 RPG게임입니다.\n\n");
+				}
+			}
+		}
+		else if (input == 3) {
+			printf("어떤 휴대폰게임을 원하시나요? 1.캐주얼 2.스포츠 3.수집형게임 \n");
+			printf("번호를 입력해 주세요 : ");
+			scanf_s("%d", &x);
+			if (x == 1)
+			{
+				
+				printf("추천해드리는 게임은1.쿠키런 2.브롤스타즈 3.마인크래프트\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 데브시스터즈의 러닝 액션게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은 SUPERCELL의  AOS+배틀로얄 모바일 슈팅 게임입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 Mojang Studios의 샌드박스게임입니다.\n\n");
+				}
+			}
+			else if (x == 2)
+			{
+			
+				printf("추천해드리는 게임은 1.카트라이더 러쉬플러스 2.피파모바일 3.아스팔트.\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 넥슨의 캐주얼 레이싱 게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 게임은  EA 스포츠의 스포츠 게임입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 Gameloft의 레이싱게임입니다.\n\n");
+				}
+			}
+			else if (x == 3)
+			{
+				
+				printf("추천드리는 게임은 1.세븐나이츠 2.명일방주 3.붕괴3.\n\n");
+				printf("어떤 게임을 설명해 드릴까요?\n");
+				printf("번호를 입력해 주세요 : ");
+				scanf_s("%d", &y);
+				if (y == 1) {
+					printf("이 게임은 넷마블 넥서스의 수집형 RPG게임입니다.\n\n");
+				}
+				else if (y == 2) {
+					printf("이 Hypergryph의 수집형 타워 디펜스 RPG게임입니다.\n\n");
+				}
+				else if (y == 3) {
+					printf("이 게임은 miHoYo Network Technology의 3D액션 게임입니다.\n\n");
+				}
+			}
+		}
+		else if (input == 4) {
+			
+			ranum = rand() % b;
+			
+			for (int i = sizeof(ary_indi) / sizeof(ary_indi[1]) - 1; i >= 0; i--) {
+				if (ranum == i) {
+					printf("%s\n\n", ary_indi[i]);
+				}
+			}
+		}
+		else if (input == 5) {
+			
+			printf("프로그램을 종료합니다\n");
+			break;
+			
+		}
+
+		else {
+			printf("숫자 1~4까지만 입력해 주시길 바랍니다.\n");
+			
+			
+		}
+	}
+	return 0;
+}
