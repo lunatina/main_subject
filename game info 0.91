@@ -6,10 +6,7 @@
 int main() {
 
 	//두가지 통합버전
-	char ary_indi[][100] = { "Journey(저니)","UNDERTALE(언더테일)","Sacred Stones","Aaero(에어로)","Anarcute(아나큐트)","Despotism 3k(횡포 삼크)","Standby(스텐바이)","My Memory of us(내가 가진우리의 기억)",
-		"Shikhondo 식혼도-soul eater","The Textorcist: The Story of Ray Bibbia(텍스트 퇴마사)","Steel Rats(쇠쥐들)","Human-powered spacecraft(인간동력 우주선)","Pan-Pan(팡팡)","Viking Squad(바이킹 스쿼드)",
-	"Colorzzle(컬러즐)","MarZ:Tactical Base Defense(전술기지방어)","GNOG","Blind Girl(블라인드 걸)","Semblance(셈블런스)","The Coma: Recut(코마: 리컷)","Floor kids(플로어 키즈)","The Inner Friend(내면의 친구)",
-		"Assault Spy(폭행 간첩)","Card Crawl(카드 크롤)" };
+	char ary_indi[][100] = { "Journey(저니)","UNDERTALE(언더테일)" };
 	srand(time(NULL));
 	int input = 0;
 	int x = 0;
@@ -159,54 +156,22 @@ int main() {
 				//겜추천
 				printf("추천해드리는 게임은1.쿠키런 2.브롤스타즈 3.마인크래프트\n\n");
 				//게임설명부분
-				printf("어떤 게임을 설명해 드릴까요?\n");
-				printf("번호를 입력해 주세요 : ");
-				scanf_s("%d", &y);
-				if (y == 1) {
-					printf("이 게임은 데브시스터즈의 러닝 액션게임입니다.\n\n");
-				}
-				else if (y == 2) {
-					printf("이 게임은 SUPERCELL의  AOS+배틀로얄 모바일 슈팅 게임입니다.\n\n");
-				}
-				else if (y == 3) {
-					printf("이 게임은 Mojang Studios의 샌드박스게임입니다.\n\n");
-				}
+				
 			}
 			else if (x == 2)
 			{
 				//겜추천
 				printf("추천해드리는 게임은 1.카트라이더 러쉬플러스 2.피파모바일 3.아스팔트.\n\n");
 				//게임설명부분
-				printf("어떤 게임을 설명해 드릴까요?\n");
-				printf("번호를 입력해 주세요 : ");
-				scanf_s("%d", &y);
-				if (y == 1) {
-					printf("이 게임은 넥슨의 캐주얼 레이싱 게임입니다.\n\n");
-				}
-				else if (y == 2) {
-					printf("이 게임은  EA 스포츠의 스포츠 게임입니다.\n\n");
-				}
-				else if (y == 3) {
-					printf("이 게임은 Gameloft의 레이싱게임입니다.\n\n");
-				}
+				
 			}
 			else if (x == 3)
 			{
 				//겜추천
 				printf("추천드리는 게임은 1.세븐나이츠 2.명일방주 3.붕괴3.\n\n");
 				//게임설명부분
-				printf("어떤 게임을 설명해 드릴까요?\n");
-				printf("번호를 입력해 주세요 : ");
-				scanf_s("%d", &y);
-				if (y == 1) {
-					printf("이 게임은 넷마블 넥서스의 수집형 RPG게임입니다.\n\n");
-				}
-				else if (y == 2) {
-					printf("이 Hypergryph의 수집형 타워 디펜스 RPG게임입니다.\n\n");
-				}
-				else if (y == 3) {
-					printf("이 게임은 miHoYo Network Technology의 3D액션 게임입니다.\n\n");
-				}
+				
+				
 			}
 		}
 		else if (input == 4) {//인디겜
